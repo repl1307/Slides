@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Slides 2.0</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="main-container">
+    <div id="tool-bar-container">
+      <div id="name-container">
+        <div id="logo">
+          <img src="assets/logo.png" />
+        </div>
+        <div id="menu-options-container">
+          <div id="name-options">
+            <input type="text" id="name" value="Untitled Presentation"/>
+          </div>
+          <div id="menu-options">
+            <button class="tool-bar-option">File</button>
+            <button class="tool-bar-option">Edit</button>
+            <button class="tool-bar-option">View</button>
+            <button class="tool-bar-option" id="zoom-button">
+              <label for="zoom">Zoom: </label>
+              <span class="input-symbol">
+                <input type="number" style="width:3rem;" value="100" min="25" max="1600" />
+              %</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="tool-bar">
+        <button class="tool-bar-option">Textbox</button>
+        <button class="tool-bar-option">Image</button>
+        <button class="tool-bar-option">Shapes</button>
+      </div>
+    </div>
+    <div id="slideshow-container">
+      <div id="slides-list-container">
+        <div id="add-slide-container"> 
+          <button id="add-slide">+</button>
+        </div>
+        <div id="slides-list"></div>
+      </div>
+      <div id="slide-container">
+        <div id="current-slide-wrapper">
+          <div id="current-slide" class="current-slide"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js" type="module"></script>
+</body>
+</html>
